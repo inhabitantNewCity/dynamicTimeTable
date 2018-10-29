@@ -20,7 +20,7 @@ public Week(){
 	this.weekDaysName = new DateFormatSymbols().getWeekdays();
     for (int i = 1; i < weekDaysName.length; i++) {
         //System.out.println("weekday = " + weekDaysName[i]);
-    	if(!(weekDaysName[i].equalsIgnoreCase("Sunday"))){
+    	if(!(weekDaysName[i].equalsIgnoreCase("суббота")) && !weekDaysName[i].isEmpty()){
     	Day newday=new Day(weekDaysName[i]);
     	weekDays.add(newday);
     		}
